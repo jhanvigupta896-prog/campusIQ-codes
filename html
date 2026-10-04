@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CampusIQ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>CampusIQ</h1>
+        <p>Report a campus issue</p>
+
+        <form id="issueForm">
+
+            <label>Issue Title</label>
+            <input
+                type="text"
+                id="title"
+                placeholder="Example: Wi-Fi not working"
+                required
+            >
+
+            <label>Location</label>
+            <input
+                type="text"
+                id="location"
+                placeholder="Example: Block A"
+                required
+            >
+
+            <label>Description</label>
+            <textarea
+                id="description"
+                placeholder="Describe the problem"
+                required
+            ></textarea>
+
+            <button type="submit">
+                Submit Issue
+            </button>
+
+        </form>
+
+        <div id="result"></div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
